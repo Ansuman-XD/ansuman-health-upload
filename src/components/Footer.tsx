@@ -14,7 +14,7 @@ const Footer = () => {
               </div>
               <span className="font-display font-bold text-xl text-white">PhysioElite</span>
             </div>
-            <p className="text-sm leading-relaxed text-white/60">Premium physiotherapy & personalized rehabilitation designed for long-term recovery.</p>
+            <p className="text-sm leading-relaxed text-white/60"> Located in Sahadevkhunta, Balasore, Dr Physiotherapy Clinic is a leading center for advanced physiotherapy and rehabilitation in Odisha. We proudly serve patients not only from Balasore but also from major cities including Bhubaneswar, Cuttack, Rourkela, Sambalpur, Berhampur, Puri, Jharsuguda, Baripada and surrounding districts..</p>
           </div>
           <div>
             <h4 className="font-semibold text-white mb-4">Quick Links</h4>
@@ -27,7 +27,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-white mb-4">Services</h4>
             <div className="flex flex-col gap-2 text-sm text-white/60">
-              <span>Sports Injury Rehab</span><span>Post-Surgery Rehab</span><span>Stroke Rehabilitation</span><span>Back & Neck Pain</span><span>Home Visit Therapy</span>
+              <span>Sports Injury Rehab ,  Balasore</span><span>Post-Surgery Rehab ,Bhubaneswar</span><span>Stroke Rehabilitation ,  Cuttack</span><span>Back & Neck Pain , Rourkela</span><span> Sambalpur, Berhampur, Puri, Jharsuguda, Baripada </span>
             </div>
           </div>
           <div>

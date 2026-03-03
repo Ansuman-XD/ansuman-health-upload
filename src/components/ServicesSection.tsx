@@ -3,13 +3,13 @@ import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import { whatsappLink } from "@/lib/constants";
-import serviceSports from "@/assets/service-sports.jpg";
-import serviceSurgery from "@/assets/service-surgery.jpg";
-import serviceStroke from "@/assets/service-stroke.jpg";
-import serviceBack from "@/assets/service-back.jpg";
-import serviceOrtho from "@/assets/service-ortho.jpg";
-import serviceNeuro from "@/assets/service-neuro.jpg";
-import serviceHome from "@/assets/service-home.jpg";
+import serviceSports from "@/assets/service-sports.webp";
+import serviceSurgery from "@/assets/service-surgery.webp";
+import serviceStroke from "@/assets/service-stroke.webp";
+import serviceBack from "@/assets/service-back.webp";
+import serviceOrtho from "@/assets/service-ortho.webp";
+import serviceNeuro from "@/assets/service-neuro.webp";
+import serviceHome from "@/assets/service-home.webp";
 
 const services = [
   { image: serviceSports, title: "Sports Injury Rehab", desc: "Expert recovery from sports injuries with specialized rehabilitation protocols." },

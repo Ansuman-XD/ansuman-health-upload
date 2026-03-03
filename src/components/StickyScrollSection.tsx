@@ -3,9 +3,9 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Phone } from "lucide-react";
 import { WHATSAPP_DEFAULT } from "@/lib/constants";
-import storyDiagnosis from "@/assets/story-diagnosis.jpg";
-import storyRehab from "@/assets/story-rehab.jpg";
-import storyTech from "@/assets/story-tech.jpg";
+import storyDiagnosis from "@/assets/story-diagnosis.webp";
+import storyRehab from "@/assets/story-rehab.webp";
+import storyTech from "@/assets/story-tech.webp";
 
 const stories = [
   { tag: "Step 01", title: "Precision Diagnosis. Personalized Care.", description: "Our certified physiotherapists conduct comprehensive biomechanical assessments using advanced diagnostic tools. Every treatment plan starts with understanding your unique condition — no cookie-cutter approaches.", image: storyDiagnosis },

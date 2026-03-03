@@ -17,7 +17,7 @@ const HeroSection = () => {
       <div className="relative z-10 container-narrow mx-auto px-4 sm:px-6 pt-28 pb-20 lg:pt-32">
         <div className="max-w-3xl">
           <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-            <span className="inline-block px-4 py-2 rounded-full bg-accent/20 text-accent text-sm font-medium mb-6 backdrop-blur-sm border border-accent/20">✦ Premium Physiotherapy & Rehabilitation</span>
+            <span className="inline-block px-4 py-2 rounded-full bg-accent/20 text-accent text-sm font-medium mb-6 backdrop-blur-sm border border-accent/20">✦ Premium Physiotherapy & Rehabilitation Across Odisha</span>
           </motion.div>
 
           <motion.h1 initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.15 }} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-[1.1] mb-6 tracking-tight">
