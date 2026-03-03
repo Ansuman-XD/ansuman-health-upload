@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Phone, Monitor, ChevronDown } from "lucide-react";
 import heroImage from "@/assets/hero-physio.jpg";
 import { WHATSAPP_DEFAULT } from "@/lib/constants";
+import WhatsAppFormDialog from "@/components/WhatsAppFormDialog";
 
 const HeroSection = () => {
   return (
@@ -33,9 +34,9 @@ const HeroSection = () => {
                 <Phone className="w-5 h-5" /> Book Session
               </a>
             </Button>
-            <Button variant="hero-outline" size="xl" asChild>
-              <a href="/online-rehab"><Monitor className="w-5 h-5" /> Start Online Rehab</a>
-            </Button>
+            <WhatsAppFormDialog trigger={
+              <Button variant="hero-outline" size="xl"><Monitor className="w-5 h-5" /> Start Online Rehab</Button>
+            } />
           </motion.div>
         </div>
 
