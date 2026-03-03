@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import MobileStickyBar from "@/components/MobileStickyBar";
 import ScrollProgress from "@/components/ScrollProgress";
+import WhatsAppFormDialog from "@/components/WhatsAppFormDialog";
 
 const features = [
   { icon: Video, title: "Video Consultation", desc: "Live face-to-face sessions with certified physiotherapists from anywhere." },
@@ -42,11 +43,9 @@ const OnlineRehabPage = () => {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-white leading-tight mb-4">Recovery, <span className="text-gradient-green">Reimagined.</span></h1>
           <p className="text-white/60 max-w-2xl mx-auto text-lg mb-8">World-class physiotherapy delivered to your screen. Guided by certified therapists, track your progress, and recover on your schedule.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="xl" asChild>
-              <a href={whatsappLink("Hello, I want to start the Online Rehab Program.")} target="_blank" rel="noopener noreferrer">
-                <Phone className="w-5 h-5" /> Start Now via WhatsApp
-              </a>
-            </Button>
+            <WhatsAppFormDialog trigger={
+              <Button variant="hero" size="xl"><Phone className="w-5 h-5" /> Start Now</Button>
+            } />
           </div>
         </div>
       </section>
@@ -83,11 +82,9 @@ const OnlineRehabPage = () => {
             </div>
 
             <div className="text-center mt-12">
-              <Button variant="accent" size="xl" asChild>
-                <a href={whatsappLink("Hello, I want to start the Online Rehab Program.")} target="_blank" rel="noopener noreferrer">
-                  <Phone className="w-5 h-5" /> Get Started Today
-                </a>
-              </Button>
+              <WhatsAppFormDialog trigger={
+                <Button variant="accent" size="xl"><Phone className="w-5 h-5" /> Get Started Today</Button>
+              } />
             </div>
           </motion.div>
         </div>

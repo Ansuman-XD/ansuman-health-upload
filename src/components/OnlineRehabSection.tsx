@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Video, FileText, BarChart3, MessageCircle, Download, Phone } from "lucide-react";
 import { whatsappLink } from "@/lib/constants";
+import WhatsAppFormDialog from "@/components/WhatsAppFormDialog";
 
 const features = [
   { icon: Video, title: "Video Consultation", desc: "Face-to-face sessions from the comfort of your home." },
@@ -25,7 +26,7 @@ const OnlineRehabSection = () => {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-secondary-foreground leading-tight mb-6">Recovery, <span className="text-gradient-green">Reimagined.</span></h2>
             <p className="text-white/60 leading-relaxed mb-8 max-w-md">Our digital rehabilitation platform brings world-class physiotherapy to your screen. Guided by certified therapists, track your progress, and recover on your schedule.</p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="xl" asChild><a href="/online-rehab">Start Online Rehab</a></Button>
+              <WhatsAppFormDialog trigger={<Button variant="hero" size="xl">Start Online Rehab</Button>} />
               <Button variant="hero-outline" size="xl" asChild>
                 <a href={whatsappLink("Hello, I am interested in the Online Rehab Program.")} target="_blank" rel="noopener noreferrer">
                   <Phone className="w-5 h-5" /> Talk to Us
