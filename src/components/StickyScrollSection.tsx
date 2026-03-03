@@ -27,7 +27,7 @@ const StickyScrollSection = () => {
                 <StoryText key={i} story={story} index={i} total={stories.length} progress={scrollYProgress} />
               ))}
             </div>
-            <div className="relative aspect-square rounded-3xl overflow-hidden shadow-elevated hidden lg:block">
+            <div className="relative aspect-[4/3] lg:aspect-square rounded-3xl overflow-hidden shadow-elevated">
               {stories.map((story, i) => (
                 <StoryImage key={i} src={story.image} index={i} total={stories.length} progress={scrollYProgress} />
               ))}

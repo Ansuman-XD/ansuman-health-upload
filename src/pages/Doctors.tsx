@@ -8,33 +8,7 @@ import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import MobileStickyBar from "@/components/MobileStickyBar";
 import ScrollProgress from "@/components/ScrollProgress";
-
-const doctors = [
-  {
-    name: "Dr. Ansuman Patel",
-    qualification: "BPT, MPT (Orthopedics)",
-    specialization: "Sports Injury & Orthopedic Rehab",
-    experience: "10+ Years",
-  },
-  {
-    name: "Dr. Priya Sharma",
-    qualification: "BPT, MPT (Neurology)",
-    specialization: "Stroke & Neurological Rehabilitation",
-    experience: "8+ Years",
-  },
-  {
-    name: "Dr. Rajesh Kumar",
-    qualification: "BPT, MPT (Cardiopulmonary)",
-    specialization: "Post-Surgery & Cardiac Rehab",
-    experience: "12+ Years",
-  },
-  {
-    name: "Dr. Sneha Gupta",
-    qualification: "BPT, MPT (Sports Medicine)",
-    specialization: "Sports Performance & Recovery",
-    experience: "6+ Years",
-  },
-];
+import doctorImage from "@/assets/doctor-ansuman.jpg";
 
 const DoctorsPage = () => {
   const ref = useRef(null);
@@ -47,39 +21,32 @@ const DoctorsPage = () => {
       <section className="gradient-hero pt-32 pb-20 px-4">
         <div className="container-narrow mx-auto text-center">
           <span className="inline-block px-4 py-2 rounded-full bg-accent/20 text-accent text-sm font-medium mb-4">Our Team</span>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-white leading-tight mb-4">Meet Our <span className="text-gradient-green">Specialists</span></h1>
-          <p className="text-white/60 max-w-2xl mx-auto text-lg">Certified physiotherapists with years of experience, dedicated to your recovery journey.</p>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-white leading-tight mb-4">Meet Our <span className="text-gradient-green">Specialist</span></h1>
+          <p className="text-white/60 max-w-2xl mx-auto text-lg">Certified physiotherapist with years of experience, dedicated to your recovery journey.</p>
         </div>
       </section>
 
       <section className="section-padding" ref={ref}>
-        <div className="container-narrow mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {doctors.map((doc, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 40 }}
-                animate={inView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="glass-card p-6 text-center group hover:shadow-elevated transition-all duration-500 perspective-1000"
-              >
-                <div className="preserve-3d group-hover:[transform:rotateY(3deg)_rotateX(3deg)] transition-transform duration-500">
-                  <div className="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-5 group-hover:bg-primary/15 transition-colors">
-                    <GraduationCap className="w-10 h-10 text-primary" />
-                  </div>
-                  <h3 className="text-lg font-bold text-foreground mb-1">{doc.name}</h3>
-                  <p className="text-xs text-muted-foreground mb-1">{doc.qualification}</p>
-                  <p className="text-sm text-primary font-medium mb-1">{doc.specialization}</p>
-                  <p className="text-xs text-accent font-semibold mb-5">{doc.experience}</p>
-                  <Button variant="whatsapp" size="sm" className="w-full" asChild>
-                    <a href={whatsappLink(`Hello Dr. ${doc.name.split(" ").pop()}, I would like to book a consultation.`)} target="_blank" rel="noopener noreferrer">
-                      <Phone className="w-3.5 h-3.5" /> Book Consultation
-                    </a>
-                  </Button>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+        <div className="container-narrow mx-auto flex justify-center">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5 }}
+            className="glass-card p-8 text-center group hover:shadow-elevated transition-all duration-500 max-w-sm w-full"
+          >
+            <div className="w-36 h-36 rounded-full overflow-hidden mx-auto mb-6 ring-4 ring-primary/20">
+              <img src={doctorImage} alt="Dr. Ansuman Patel" className="w-full h-full object-cover" />
+            </div>
+            <h3 className="text-xl font-bold text-foreground mb-1">Dr. Ansuman Patel</h3>
+            <p className="text-xs text-muted-foreground mb-1">BPT, MPT (Orthopedics)</p>
+            <p className="text-sm text-primary font-medium mb-1">Sports Injury & Orthopedic Rehab</p>
+            <p className="text-xs text-accent font-semibold mb-6">10+ Years Experience</p>
+            <Button variant="whatsapp" size="lg" className="w-full" asChild>
+              <a href={whatsappLink("Hello Dr. Patel, I would like to book a consultation.")} target="_blank" rel="noopener noreferrer">
+                <Phone className="w-4 h-4" /> Book Consultation
+              </a>
+            </Button>
+          </motion.div>
         </div>
       </section>
 
