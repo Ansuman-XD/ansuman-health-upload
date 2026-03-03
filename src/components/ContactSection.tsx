@@ -18,7 +18,7 @@ const ContactSection = () => {
 
         <div className="grid lg:grid-cols-2 gap-8">
           <motion.div initial={{ opacity: 0, x: -30 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.6, delay: 0.2 }} className="rounded-3xl overflow-hidden shadow-elevated h-[350px] lg:h-full min-h-[300px]">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.0!2d72.8!3d19.1!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDA2JzAwLjAiTiA3MsKwNDgnMDAuMCJF!5e0!3m2!1sen!2sin!4v1" width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Clinic Location" />
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.5!2d86.93!3d21.49!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1c5e2b5f000001%3A0x1!2sDr.Physiotherapy%20Clinic!5e0!3m2!1sen!2sin!4v1&q=Dr.Physiotherapy+Clinic+Sahadevkhunta+Balasore+Odisha" width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Dr.Physiotherapy Clinic Location" />
           </motion.div>
 
           <motion.div initial={{ opacity: 0, x: 30 }} animate={inView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.6, delay: 0.3 }} className="flex flex-col gap-6">

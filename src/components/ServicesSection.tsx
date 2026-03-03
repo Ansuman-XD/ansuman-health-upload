@@ -1,17 +1,24 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { Phone, Dumbbell, HeartPulse, Brain, Bone, Activity, Home, Stethoscope } from "lucide-react";
+import { Phone } from "lucide-react";
 import { whatsappLink } from "@/lib/constants";
+import serviceSports from "@/assets/service-sports.jpg";
+import serviceSurgery from "@/assets/service-surgery.jpg";
+import serviceStroke from "@/assets/service-stroke.jpg";
+import serviceBack from "@/assets/service-back.jpg";
+import serviceOrtho from "@/assets/service-ortho.jpg";
+import serviceNeuro from "@/assets/service-neuro.jpg";
+import serviceHome from "@/assets/service-home.jpg";
 
 const services = [
-  { icon: Dumbbell, title: "Sports Injury Rehab", desc: "Expert recovery from sports injuries with specialized rehabilitation protocols." },
-  { icon: HeartPulse, title: "Post-Surgery Rehabilitation", desc: "Comprehensive post-operative care to restore strength and mobility." },
-  { icon: Brain, title: "Stroke Rehabilitation", desc: "Neurological recovery programs for stroke survivors." },
-  { icon: Bone, title: "Back & Neck Pain Therapy", desc: "Advanced manual therapy and exercise for spinal conditions." },
-  { icon: Activity, title: "Orthopedic Physiotherapy", desc: "Musculoskeletal assessment and treatment for joints and bones." },
-  { icon: Stethoscope, title: "Neurological Physiotherapy", desc: "Specialized care for neurological conditions and disorders." },
-  { icon: Home, title: "Home Visit Therapy", desc: "Professional physiotherapy delivered at your doorstep." },
+  { image: serviceSports, title: "Sports Injury Rehab", desc: "Expert recovery from sports injuries with specialized rehabilitation protocols." },
+  { image: serviceSurgery, title: "Post-Surgery Rehabilitation", desc: "Comprehensive post-operative care to restore strength and mobility." },
+  { image: serviceStroke, title: "Stroke Rehabilitation", desc: "Neurological recovery programs for stroke survivors." },
+  { image: serviceBack, title: "Back & Neck Pain Therapy", desc: "Advanced manual therapy and exercise for spinal conditions." },
+  { image: serviceOrtho, title: "Orthopedic Physiotherapy", desc: "Musculoskeletal assessment and treatment for joints and bones." },
+  { image: serviceNeuro, title: "Neurological Physiotherapy", desc: "Specialized care for neurological conditions and disorders." },
+  { image: serviceHome, title: "Home Visit Therapy", desc: "Professional physiotherapy delivered at your doorstep." },
 ];
 
 const ServicesSection = () => {
@@ -28,11 +35,11 @@ const ServicesSection = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, i) => (
-            <motion.div key={i} initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5, delay: i * 0.08 }} className="glass-card p-6 sm:p-8 group hover:shadow-elevated transition-all duration-500 perspective-1000">
-              <div className="preserve-3d group-hover:[transform:rotateY(2deg)_rotateX(2deg)] transition-transform duration-500">
-                <div className="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-5 group-hover:bg-accent/20 transition-colors">
-                  <service.icon className="w-7 h-7 text-accent" />
-                </div>
+            <motion.div key={i} initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.5, delay: i * 0.08 }} className="glass-card overflow-hidden group hover:shadow-elevated transition-all duration-500">
+              <div className="h-48 overflow-hidden">
+                <img src={service.image} alt={service.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+              </div>
+              <div className="p-6">
                 <h3 className="text-lg font-bold text-foreground mb-2">{service.title}</h3>
                 <p className="text-sm text-muted-foreground mb-5 leading-relaxed">{service.desc}</p>
                 <Button variant="whatsapp" size="sm" asChild>
