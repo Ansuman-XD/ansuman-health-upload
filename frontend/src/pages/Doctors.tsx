@@ -38,8 +38,8 @@ const DoctorsPage = () => {
               <img src={doctorImage} alt="Dr. Ansuman Patel" className="w-full h-full object-cover" />
             </div>
             <h3 className="text-xl font-bold text-foreground mb-1">Dr. sukantamoharan</h3>
-            <p className="text-xs text-muted-foreground mb-1">BPT, MPT (Orthopedics)</p>
-            <p className="text-sm text-primary font-medium mb-1">Sports Injury & Orthopedic Rehab</p>
+            <p className="text-xs text-muted-foreground mb-1">BPT, MPT (Neurology)</p>
+            <p className="text-sm text-primary font-medium mb-1">Sports Injury & Neuro Rehabilitation</p>
             <p className="text-xs text-accent font-semibold mb-6">10+ Years Experience</p>
             <Button variant="whatsapp" size="lg" className="w-full" asChild>
               <a href={whatsappLink("Hello Dr. Patel, I would like to book a consultation.")} target="_blank" rel="noopener noreferrer">
