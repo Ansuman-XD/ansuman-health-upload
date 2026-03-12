@@ -4,6 +4,7 @@ import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from "react-router-dom";
 import { WHATSAPP_DEFAULT } from "@/lib/constants";
+import logoImg from "@/assets/logo1.png";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -30,10 +31,8 @@ const Header = () => {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "glass-card border-b border-border/50 py-3" : "bg-transparent py-5"}`}>
       <div className="container-narrow mx-auto px-4 sm:px-6 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-xl gradient-accent-bg flex items-center justify-center">
-            <span className="text-accent-foreground font-bold text-lg">P</span>
-          </div>
-          <span className={`font-display font-bold text-xl ${scrolled ? "text-foreground" : "text-white"}`}>PhysioElite</span>
+          <img src={logoImg} alt="Logo" className="w-20 h-20 object-contain" />
+          <span className={`font-display font-bold text-xl ${scrolled ? "text-foreground" : "text-white"}`}>Dr. Physiotherapy & <br></br> Rehabilitation</span>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1">
