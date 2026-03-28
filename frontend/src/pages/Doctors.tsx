@@ -37,7 +37,7 @@ const DoctorsPage = () => {
             <div className="w-36 h-36 rounded-full overflow-hidden mx-auto mb-6 ring-4 ring-primary/20">
               <img src={doctorImage} alt="Dr. Ansuman Patel" className="w-full h-full object-cover" />
             </div>
-            <h3 className="text-xl font-bold text-foreground mb-1">Dr. sukantamoharan</h3>
+            <h3 className="text-xl font-bold text-foreground mb-1">Dr. Sukanta Moharana</h3>
             <p className="text-xs text-muted-foreground mb-1">BPT, MPT (Neurology)</p>
             <p className="text-sm text-primary font-medium mb-1">Sports Injury & Neuro Rehabilitation</p>
             <p className="text-xs text-accent font-semibold mb-6">10+ Years Experience</p>
