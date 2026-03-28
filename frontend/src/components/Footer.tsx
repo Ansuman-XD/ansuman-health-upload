@@ -41,7 +41,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-white/10 mt-12 pt-8 text-center text-sm text-white/40">
-          <p>© {new Date().getFullYear()} PhysioElite. All rights reserved.</p>
+          <p>© {new Date().getFullYear()}  Dr. Physiotherapy & Rehabilitation × BlackMoon AI & Tech Labs — All rights reserved..</p>
         </div>
       </div>
     </footer>

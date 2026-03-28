@@ -1,7 +1,7 @@
 export const WHATSAPP_NUMBER = "919658659119";
 export const CLINIC_NAME = "Dr.Physiotherapy Clinic";
 export const CLINIC_PHONE = "+91 96586 59119";
-export const CLINIC_EMAIL = "sukantamoharana0@gmail.com";
+export const CLINIC_EMAIL = "drphysiotherapyclinic2026@gmail.com";
 export const CLINIC_ADDRESS = "Sahadevkhunta, Near Bhaskarganj Fandi, Balasore - 756001, Odisha";
 
 export const whatsappLink = (message: string) =>

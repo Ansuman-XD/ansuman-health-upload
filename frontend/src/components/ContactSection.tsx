@@ -26,7 +26,7 @@ const ContactSection = () => {
               { icon: MapPin, label: "Address", value: CLINIC_ADDRESS },
               { icon: Phone, label: "Phone", value: CLINIC_PHONE },
               { icon: Mail, label: "Email", value: CLINIC_EMAIL },
-              { icon: Clock, label: "Working Hours", value: "Mon – Sat: 8:00 AM – 8:00 PM\nSunday: By Appointment Only" },
+              { icon: Clock, label: "Working Hours", value: " Mon–Sat: 8:00 AM – 10:00 PM\nSunday: By Appointment Only" },
             ].map((item, i) => (
               <div key={i} className="glass-card p-6 flex items-start gap-4 hover:shadow-elevated transition-all duration-300">
                 <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
